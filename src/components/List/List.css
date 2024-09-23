@@ -1,0 +1,79 @@
+/* Styling for the person article in the List component */
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for person cards */
+  .person:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Person image */
+  .person img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #d8d8d8;
+  }
+  
+  /* The text container in the person card */
+  .person div {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  /* Name of the person */
+  .person h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Age of the person */
+  .person p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Responsive adjustments for List component */
+  @media (max-width: 768px) {
+    .person {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .person img {
+      margin-bottom: 10px;
+    }
+  
+    .person h4 {
+      font-size: 16px;
+    }
+  
+    .person p {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .person h4 {
+      font-size: 14px;
+    }
+  
+    .person p {
+      font-size: 12px;
+    }
+  }
+  
